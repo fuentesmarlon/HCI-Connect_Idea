@@ -1,0 +1,65 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(createAccountbg.jpeg);
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+  height: 100%;
+}
+.createAccountBox{
+  width: 800px;
+  height: 520px;
+  background: rgba(0,0,0,0.5);
+  color:#fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 40px 30px;
+}
+.avatar{
+  width: 200px;
+  height:200px;
+  position: absolute;
+  top: 150px;
+  left: 400px;
+}
+.createAccountBox input[type="text"], input[type="password"]
+{
+  border: none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 20px;
+  color:#fff;
+  font-size: 16px;
+   }
+.joinButton{
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  font-weight: bold;
+}
+.cancelButton{
+  position: absolute;
+  bottom: 25px;
+  right: 200px;
+  font-weight: bold;
+}
+.createAccountBox input[type="submit"]{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #C64A4A;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+.createAccountBox input[type="submit"]:hover
+{
+  cursor: pointer;
+  background: #ffc107;
+  color: #000;
+}
