@@ -1,0 +1,87 @@
+<html>
+<title>Conect_Idea</title>
+<link rel="stylesheet" type="text/css" href="styleMain.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="homepageStyle.css">
+<style>
+h6 {font-family:"Helvetica Neue",Helvetica,Arial}
+</style>
+<body class="w3-blue-gray">
+  <div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a  class ="w3-bar-item"><b>Connect_Idea </b><img src="logo.png" alt="logo" style="width:15px"/></a>
+      <div class="w3-right w3-hide-small">
+      <a href="logIn.html" class="w3-bar-item w3-button">Sign In</a>
+      <a href="createAccount.html" class="w3-bar-item w3-button">Create Account</a>
+      </div>
+    </div>
+  </div>
+  <div class="w3-content" style="max-width:200000px">
+
+
+
+  <header class="w3-display-container w3-content w3-wide " style="max-width:1600px;min-width:500px" id="home">
+    <div class="mySlides">
+    <img class="w3-image w3-opacity" src="header.jpg" width="1600" height="800">
+    <div class="w3-display-middle w3-padding w3-hide-small" style="width:40%">
+      <div class="w3-black  w3-padding-large w3-round-large"
+      <h1 class="w3-xxlarge"><b>Build a Workgroup with People from Around the World</b></h1>
+      <hr class="w3-opacity">
+      <p>Sourround yourself with persons whom opinions you will value the most. Improve productivity by enganging with persons
+        that are professionals in their field of work.</p>
+      </div>
+    </div>
+  </div>
+  <div class="mySlides">
+  <img class="w3-image w3-opacity" src="background.jpg" width="1600" height="800">
+  <div class="w3-display-middle w3-padding w3-hide-small" style="width:40%">
+    <div class="w3-black  w3-padding-large w3-round-large"
+    <h1 class="w3-xxlarge"><b>Get Instant Feedback and Improve your Ideas</b></h1>
+    <hr class="w3-opacity">
+    <p>Post your ideas to an ever growing community of people willing to help you improve them.
+    It doesn't matter the topic, there will be someone ready to help you. </p>
+    </div>
+  </div>
+</div>
+  <div class="mySlides">
+  <img class="w3-image w3-opacity" src="about.jpg" width="1600" height="800">
+  <div class="w3-display-middle w3-padding w3-hide-small" style="width:40%">
+    <div class="w3-black  w3-padding-large w3-round-large"
+    <h1 class="w3-xxlarge"><b>Be Creative</b></h1>
+    <hr class="w3-opacity">
+    <p>Your imagination has no limits, neither do us. It doesn't matter your age, race or religion, this is an
+    open space to post your ideas, work on them, and improve them over time. Never stop creating.</p>
+    </div>
+  </div>
+</div>
+    </div>
+
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    <!--<div class="w3-display-middle w3-padding-large">
+    </div>-->
+ </header>
+
+ <script>
+ var slideIndex = 1;
+ showDivs(slideIndex);
+
+ function plusDivs(n) {
+   showDivs(slideIndex += n);
+ }
+
+ function showDivs(n) {
+   var i;
+   var x = document.getElementsByClassName("mySlides");
+   if (n > x.length) {slideIndex = 1}
+   if (n < 1) {slideIndex = x.length}
+   for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+   }
+   x[slideIndex-1].style.display = "block";
+ }
+ </script>
+ </body>
+
+
+</html>
